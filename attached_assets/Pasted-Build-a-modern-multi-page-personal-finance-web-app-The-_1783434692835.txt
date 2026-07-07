@@ -1,0 +1,92 @@
+Build a modern multi-page personal finance web app.
+
+The website should be luxury, simple, clean, and very easy to understand, with smooth 3D animations and premium UI effects. Use a dark luxury theme with glassmorphism cards, soft gradients, subtle shadows, animated 3D elements, and smooth page transitions.
+
+The app should include these pages:
+
+1. Dashboard Page
+   Create a main dashboard that shows:
+
+* Total wallet balance
+* Total spending
+* Remaining money
+* Monthly overview
+* Recent transactions
+* Spending summary cards
+* Clean charts for income and expenses
+* A beautiful 3D animated finance/wallet visual
+
+2. Wallet Page
+   Create a wallet page where the user can:
+
+* Add money to the wallet
+* Subtract money from the wallet
+* View wallet balance
+* See wallet history
+* Add notes for each wallet transaction
+
+3. Spending Page
+   Create a spending page where the user can:
+
+* Add a new spending transaction
+* Enter amount, category, date, and note
+* View all spending transactions
+* Delete or edit transactions
+* See total spending by month
+
+4. Categories Page
+   Create a categories page for spending categories such as:
+
+* Food
+* Transport
+* Shopping
+* Bills
+* Entertainment
+* Health
+* Other
+
+Allow the user to add, edit, and delete custom categories.
+
+5. Money Owed To Me Page
+   Create a page called “Money Owed To Me”.
+
+This page should help the user track people who borrowed money from him.
+
+The user should be able to:
+
+* Add a person’s name
+* Add how much money they owe
+* Add the date
+* Add a note/reason
+* Mark the debt as paid or unpaid
+* Edit or delete each record
+* See total unpaid money
+* See paid and unpaid debts separately
+
+Use a clear table or card layout so the user never forgets who owes him money.
+
+6. Reports Page
+   Create a simple reports page that shows:
+
+* Total wallet balance
+* Total spending
+* Total unpaid money owed to me
+* Spending by category
+* Monthly spending overview
+
+General requirements:
+
+* Make the design fully responsive for desktop, tablet, and mobile.
+* Use a luxury and professional design style.
+* Keep the UI simple and beginner-friendly.
+* Add smooth 3D animations, hover effects, animated cards, and page transitions.
+* Use clear icons for wallet, spending, categories, reports, and debts.
+* Store the data locally using localStorage so the user does not lose the data after refreshing the page.
+* Make the app functional, not just static UI.
+* Include example/demo data at first, but allow the user to add, edit, delete, and update all information.
+* Use clean code and organize the project properly.
+* Add a sidebar navigation on desktop and a bottom navigation or hamburger menu on mobile.
+
+Suggested name for the app: AuraWallet
+
+Build the full working website with all pages, components, styling, animations, and local data storage.

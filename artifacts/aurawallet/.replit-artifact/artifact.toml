@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "AuraWallet"
+version = "1.0.0"
+id = "artifacts/aurawallet"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19327
+
+[services.development]
+run = "pnpm --filter @workspace/aurawallet run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aurawallet", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/aurawallet/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19327"
+BASE_PATH = "/"
