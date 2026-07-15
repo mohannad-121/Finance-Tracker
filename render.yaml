@@ -1,0 +1,28 @@
+# Render manifest to create API (web service) and Frontend (static site).
+# Replace empty env var values in the Render dashboard or via UI when creating services.
+
+services:
+  - name: finance-tracker-api
+    type: web
+    plan: free
+    branch: main
+    env: node
+    buildCommand: "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm --filter ./artifacts/api-server run build"
+    startCommand: "pnpm --filter ./artifacts/api-server run start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+staticSites:
+  - name: finance-tracker-frontend
+    branch: main
+    plan: free
+    buildCommand: "corepack enable && corepack prepare pnpm@latest --activate && pnpm install && pnpm --filter ./artifacts/aurawallet run build"
+    publishPath: artifacts/aurawallet/dist
+    envVars:
+      - key: VITE_SUPABASE_URL
+        value: ""
+      - key: VITE_SUPABASE_PUBLISHABLE_KEY
+        value: ""
+      - key: VITE_API_BASE_URL
+        value: ""
